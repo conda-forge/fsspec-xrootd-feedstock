@@ -6,22 +6,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fsspec_xrootd-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fsspec_xrootd-{{ version }}.tar.gz
   sha256: d7f124430d26ab9139d33bc50fa8abfde3624db5dcaa5c18f56af9bf17f16f13
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 3
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - setuptools >=42
     - setuptools_scm >=3.4
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - fsspec
     - xrootd
 
@@ -34,6 +34,7 @@ test:
     - "pip show {{ name }} | grep -Fx 'Version: {{ version }}'"
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/CoffeaTeam/fsspec-xrootd
