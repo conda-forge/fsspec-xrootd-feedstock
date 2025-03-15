@@ -1,5 +1,5 @@
 {% set name = "fsspec-xrootd" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fsspec_xrootd-{{ version }}.tar.gz
-  sha256: ab3bb3afccc0a5833281ec1bdba3ad0961842fc3c12abd03235609e810595263
+  sha256: 76f2b3a0cfa58e2b26c2b67cf72769169f1eed44294ca98ec0648d19e45bfd85
 
 build:
   noarch: python
