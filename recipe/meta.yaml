@@ -34,6 +34,7 @@ test:
   requires:
     - pip
     - python {{ python_min }}
+    - xrootd
 
 about:
   home: https://github.com/CoffeaTeam/fsspec-xrootd
