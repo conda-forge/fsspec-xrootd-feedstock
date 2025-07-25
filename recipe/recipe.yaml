@@ -45,7 +45,7 @@ about:
   summary: xrootd implementation for fsspec
   license: BSD-3-Clause
   license_file: LICENSE
-  homepage: https://github.com/CoffeaTeam/fsspec-xrootd
+  homepage: https://github.com/scikit-hep/fsspec-xrootd
 
 extra:
   recipe-maintainers:
