@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: fsspec-xrootd
-  version: 0.5.1
+  version: "0.5.1"
 
 package:
   name: ${{ name|lower }}
