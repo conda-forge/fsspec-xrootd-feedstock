@@ -3,7 +3,7 @@ About fsspec-xrootd-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fsspec-xrootd-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/CoffeaTeam/fsspec-xrootd
+Home: https://github.com/scikit-hep/fsspec-xrootd
 
 Package license: BSD-3-Clause
 
