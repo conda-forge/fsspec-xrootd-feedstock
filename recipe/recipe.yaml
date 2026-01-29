@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: fsspec-xrootd
-  version: "0.5.1"
+  version: "0.5.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/fsspec_xrootd-${{ version }}.tar.gz
-  sha256: 76f2b3a0cfa58e2b26c2b67cf72769169f1eed44294ca98ec0648d19e45bfd85
+  sha256: 6370947b6a634431293b086fe24041795887dbbf4de850e26a725f8c5d0aa3c7
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
