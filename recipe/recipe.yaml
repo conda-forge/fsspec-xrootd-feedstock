@@ -13,7 +13,7 @@ source:
   sha256: 6370947b6a634431293b086fe24041795887dbbf4de850e26a725f8c5d0aa3c7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
@@ -39,7 +39,7 @@ tests:
         - python ${{ python_min }}.*
     script:
       - pip check
-      - pip show __RECIPE_MANAGER_SUBSTITUTION_MARKER__ | grep -Fx 'Version: ${{ name }}'
+      - "pip show __RECIPE_MANAGER_SUBSTITUTION_MARKER__ | grep -Fx 'Version: ${{ name }}'"
 
 about:
   summary: xrootd implementation for fsspec
